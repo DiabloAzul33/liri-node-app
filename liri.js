@@ -27,7 +27,7 @@ function concertThis(search) {
                 console.log(response.data[i].datetime);
                 console.log("=============================")
             }
-        })
+        });
 }
 function spotifyThisSong(search) {
     // console.log("Spotifying");
@@ -44,7 +44,7 @@ function spotifyThisSong(search) {
 }
 function movieThis(search) {
     // console.log("Moving");
-    axios.get("http://www.omdbapi.com/?apikey=trilogy&t=" + search ).then(function (response) {
+    axios.get("http://www.omdbapi.com/?apikey=trilogy&t=" + search).then(function (response) {
         // console.log(response.data);
         console.log(response.data.Title);
         console.log(response.data.Year);
@@ -54,12 +54,26 @@ function movieThis(search) {
         console.log(response.data.Language);
         console.log(response.data.Plot);
         console.log(response.data.Actors);
-    })
+    });
 }
 function doWhatItSays(search) {
-    console.log("Doing");
-    axios.get()
+    // console.log("Doing");
+    // fs.readFile("random.txt", "Read message!", function (err) {
+    //     if (err) {
+    //         console.log(err);
+    //     }
+    //     console.log("File read!");
+    // });
+;
+    fs.appendFile("log.txt", "Log message!\n", function (err) {
+        if (err) {
+            console.log(err);
+        }
+        console.log("File saved in log.txt!");
+        console.log("=============================")
+    });
 }
+
 
 switch (command) {
     case "concert-this":
