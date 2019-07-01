@@ -58,13 +58,12 @@ function movieThis(search) {
 }
 function doWhatItSays(search) {
     // console.log("Doing");
-    // fs.readFile("random.txt", "Read message!", function (err) {
-    //     if (err) {
-    //         console.log(err);
-    //     }
-    //     console.log("File read!");
-    // });
-;
+    fs.readFile("random.txt", "Read message!", function (err) {
+        if (err) {
+            console.log(err);
+        }
+        console.log("File read!");
+    });
     fs.appendFile("log.txt", "Log message!\n", function (err) {
         if (err) {
             console.log(err);
@@ -72,6 +71,7 @@ function doWhatItSays(search) {
         console.log("File saved in log.txt!");
         console.log("=============================")
     });
+    spotifyThisSong();
 }
 
 
