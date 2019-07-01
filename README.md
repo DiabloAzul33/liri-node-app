@@ -8,4 +8,5 @@ To run this app simply open up the folder containing the liri.js file in termina
 Technologies used in this app include: JavaScript, node.js, axios, JSON, and APIs: OMDB, BandsInTown, and Spotify
 
  https://diabloazul33.github.io/liri-node-app/
+
  
