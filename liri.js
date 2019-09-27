@@ -58,11 +58,11 @@ function movieThis(search) {
 }
 function doWhatItSays(search) {
     // console.log("Doing");
-    fs.readFile("random.txt", "Read message!", function (err) {
+    fs.readFile("random.txt", "utf8!", function (err, data) {
         if (err) {
             console.log(err);
         }
-        console.log("File read!");
+        console.log(data);
     });
     fs.appendFile("log.txt", "Log message!\n", function (err) {
         if (err) {
