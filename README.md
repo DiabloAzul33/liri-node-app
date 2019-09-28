@@ -18,7 +18,7 @@ Technologies used in this app include: JavaScript, node.js, axios, JSON, and API
 
  Carolyn Floyd 
 
- [Github](https://diabloazul33.github.io/liri-node-app/)
+ [Github](https://diabloazul33.github.io/)
 
  [deployed site link](https://diabloazul33.github.io/liri-node-app/)
 
